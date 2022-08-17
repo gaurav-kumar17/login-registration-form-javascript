@@ -10,7 +10,7 @@
 }
 .form-box{
     width: 30%;
-    height: 70%;
+    height: auto;
     position: relative;
     margin:5% auto;
     background: white;
@@ -23,7 +23,7 @@
     box-shadow: 0 0 20px 9px #f44f0e1f;
     border-radius: 50px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .toggle-btn{
     padding: 10px 20px;
@@ -33,7 +33,19 @@
     /* outline: none; */
     position: relative;
 }
-#btn{
+
+.active {
+    width: 50%;
+    background:linear-gradient(to right, #ff105f,#ffad06);
+}
+.hover:hover{
+    width: 50%;
+    background:  linear-gradient(to right, #ff105f,#ffad06);
+}
+.btn{
+    border-radius: 50px;
+}
+/* #btn{
     top:0;
     left: 0;
     position: absolute;
@@ -42,7 +54,7 @@
     background: linear-gradient(to right, #ff105f,#ffad06);
     border-radius: 50px;
     transition: .5s;
-}
+} */
 .icons{
     width: 50%;
     margin:30px auto;
@@ -101,4 +113,10 @@ label{
     /* border: 1px solid red; */
     color:grey;
     font-size: 15px;
+}
+#loginForm{
+    display: block;
+}
+#registerForm{
+    display: none;
 }
