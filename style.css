@@ -1,0 +1,104 @@
+*{
+    margin:0;
+    padding:0;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(126, 226, 184);
+    position: absolute;
+}
+.form-box{
+    width: 30%;
+    height: 70%;
+    position: relative;
+    margin:5% auto;
+    background: white;
+    padding: 5px;
+}
+.button-box{
+    width: 50%;
+    margin:35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #f44f0e1f;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.toggle-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    /* outline: none; */
+    position: relative;
+}
+#btn{
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    border-radius: 50px;
+    transition: .5s;
+}
+.icons{
+    width: 50%;
+    margin:30px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+}
+.icons i{
+    
+    width: 30px;
+    height: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #ff105f,#ffad06);
+    box-shadow: rgba(225, 139, 11, 0.881) 0px 5px 15px;
+    cursor: pointer;
+}
+.entry-sec{
+    margin: 45px auto; 
+    width: 70%;
+    transition: .5s;
+}
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin:5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid grey;
+    background: transparent;
+    outline:none;
+}
+.submit-btn{
+
+    width:85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    margin-top:30px;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border: none;
+    border-radius: 30px;
+}
+.check-box{
+    margin: 30px 10px 30px 0;
+}
+label{
+    /* border: 1px solid red; */
+    color:grey;
+    font-size: 15px;
+}
