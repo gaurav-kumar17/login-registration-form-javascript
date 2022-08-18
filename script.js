@@ -2,7 +2,6 @@ let loginForm=document.getElementById("loginForm");
 let registerForm=document.getElementById("registerForm");
 
 let loginBtn=document.getElementById("loginToggleBtn");
-
 let registerBtn=document.getElementById("registerToggleBtn");
 
 let formBox=document.getElementById("mainBox");
@@ -25,16 +24,15 @@ registerBtn.addEventListener("click",function(){
     registerBtn.classList.add("active");
 })
 
-// loginForm.addEventListener("submit",loginData);
-  
-// function loginData(e){
-//   e.preventDefault();
 
-//   let email = document.forms["loginForm"]["email"].value;
+loginForm.addEventListener("submit",loginData);
   
-//   let password = document.forms["loginForm"]["password"].value;
+function loginData(e){
+
+  e.preventDefault();
+  let userName=document.forms["loginForm"]["username"].value;
+  let password = document.forms["loginForm"]["password"].value;
 //   var data = JSON.parse(localStorage.getItem("users"));
 
-
-//   console.log(data);
-// }
+  console.log(userName,password);
+}
